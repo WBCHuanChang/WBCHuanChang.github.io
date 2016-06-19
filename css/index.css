@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: orange;
+}
+.dadiv{
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+}
+.dadiv ul li{
+    width: 500px;
+    height: 400px;
+    float: left;
+}
+.dadiv a{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #444;
+    top: 50%;
+    margin-top: -50px;
+    left:0;
+    opacity: 0.5;
+    display: none;
+}
+.dadiv:hover a{
+    display: block;
+}
+.dadiv a.right{
+    left:auto;
+    right:0;
+}
+.dadiv ol{
+    background-color: #ccc;
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    border-radius: 8px;
+    padding:2px 1px;
+    opacity: 0.5;
+}
+.dadiv ol li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    margin:0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dadiv ol li.active{
+    background-color: red;
+}
